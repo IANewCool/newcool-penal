@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Penal - NewCooltura Informada",
+  title: "Derecho Penal Chile | NewCooltura Informada",
   description: "Derecho penal, calculadora de penas, beneficios intrapenitenciarios y procedimientos",
+  keywords: ["derecho penal", "penas Chile", "beneficios carcelarios", "delitos", "procedimiento penal"],
+  openGraph: {
+    title: "Derecho Penal Chile - NewCooltura Informada",
+    description: "Penas y procedimientos penales",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
